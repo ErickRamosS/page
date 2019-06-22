@@ -1,0 +1,58 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5>Modificar Registro</h5>
+                    <form action="/links/edit" method="POST">
+                <!--<div class="form-group"></div>
+                    <a>Selecciona tu Rol:</a>
+                <select name="Estatus" >
+                    <option value="1">Alumno</option> 
+                    <option value="2">Docente</option> 
+                    
+                 </select>
+              </div>-->
+                        <div class="form-group">
+                            <a>Matricula</a>
+                            <input type="number" value="{{link.MatriculaAlumno}}" name="MatriculaAlumno" class="form-control" placeholder="Matricula" autofocus>
+                        </div>
+                        
+              
+                        <div class="form-group">
+                            <a>Nombre(s)</a>
+                            <input type="text" value="{{link.Nombre}}" name="Nombre" class="form-control" placeholder="Nombre(s)">
+                        </div>
+                        <div class="form-group">
+                            <a>Apellido Paterno</a>
+                            <input type="text" value="{{link.Apaterno}}" name="Apaterno" class="form-control" placeholder="Apellido Paterno">
+                        </div>
+                        <div class="form-group">
+                            <a>Apellido Materno</a>
+                            <input type="text" value="{{link.Amaterno}}" name="Amaterno" class="form-control" placeholder="Apellido Materno">
+                        </div>
+                        <div class="form-group">
+                            <a>No. Licencia (si cuentas con licencia)</a>
+                            <input type="number" value="{{link.licencia}}" name="licencia" class="form-control" placeholder="No. Licencia">
+                        </div>
+                        <div class="form-group">
+                            <a>E-Mail</a>
+                            <input type="text" name="correo" class="form-control" placeholder="E-Mail">
+                        </div>
+                        <div class="form-group">
+                            <a>Contraseña</a>
+                            <input type="password" name="contrasegna" class="form-control" placeholder="Contraseña">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Actualizar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

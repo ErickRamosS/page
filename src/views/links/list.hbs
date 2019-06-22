@@ -1,0 +1,37 @@
+<div class="container p-4">
+    <div class="row">
+        {{#each links}}
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <a href="" target="_blank">
+                        <h4 class="card-title text-uppercase">
+                            {{MatriculaAlumno}}</h4>
+                           <p> {{Nombre}}
+                            {{Apaterno}}
+                            {{Amaterno}}</p>
+                        
+                    </a>
+                    
+                    <p class="text-muted">
+                        {{timeago created_at}}
+                    </p>
+                    <a class="btn btn-danger" href="/links/delete/{{MatriculaAlumno}}">
+                        Borrar Registro
+                    </a>
+                    <a class="btn btn-secondary" href="/links/edit/{{MatriculaAlumno}}">
+                        Editar registro
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-md-4 mx-auto">
+            <div class="card card-body text-center">
+                <p>No hay usuarios registrados aun.</p>
+                <a href="/links/add">Registrar</a>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
