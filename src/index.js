@@ -9,7 +9,7 @@ const MySQLStore = require('express-mysql-session');
 const { database } = require ('./keys');
 
 // Settings 
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 3306);
 app.set('views', path.join(__dirname, 'views'))
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',

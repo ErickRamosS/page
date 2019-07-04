@@ -1,10 +1,10 @@
 module.exports = {
 
     database:{
-        host: 'localhost',
-        user: 'root',
-        password: 'qwerty',
-        database: 'foetrip'
+        host: 'remotemysql.com',
+        user: 'yadidS3uMA',
+        password: 'JrtgROelT7',
+        database: 'yadidS3uMA'
 
     }
 };
